@@ -18,20 +18,45 @@
 </head>
 <body>
 <h1>Usage! — Privacy Policy</h1>
-<p>Effective: August 14, 2026</p>
+<p>Effective: August 15, 2026</p>
 <div class="rule"></div>
 
 <h2>The short version</h2>
-<p>Usage! collects <strong>nothing</strong>. No analytics, no tracking, no accounts,
-no advertising identifiers, no third-party SDKs, and no network transmission of your data.</p>
+<p>Usage! collects <strong>nothing</strong>. There are no analytics, no tracking, no
+accounts, no advertising identifiers and no third-party SDKs. We run no servers,
+so there is nowhere for your data to be sent to us — and it isn't.</p>
 
 <h2>What the app reads</h2>
-<p>To show you device statistics, the app reads — <em>on your device only</em> —
-storage capacity, memory statistics, CPU load, battery level and charging state,
-network interface byte counters and IP addresses, device model, iOS version, and
-system boot time. These values are displayed to you and stored locally on your
-device (and in your private iCloud key-value storage if you enable Cloud Sync)
-so history charts work. They never reach us or anyone else.</p>
+<p>To show you device statistics, the app reads — <em>on your device</em> —
+storage capacity, memory statistics, CPU load (total and per core) and the system
+thermal state, battery level and charging state, the battery level reported by
+connected game controllers, network interface byte counters and IP addresses,
+device model, iOS version, and system boot time.</p>
+<p>These values are displayed to you and stored on your device, in the app's own
+App Group container, so history charts work. <strong>Measurement history never
+leaves your device</strong> — it is not synced, backed up to us, or transmitted
+anywhere.</p>
+
+<h2>Bluetooth accessories</h2>
+<p>The Batteries widgets can also show the charge level of Bluetooth accessories
+you already use. This is <strong>off until you switch it on</strong> in
+Preferences, which is the only moment iOS will ask you for Bluetooth permission.</p>
+<p>When it is on, the app asks iOS which <em>already-connected</em> accessories
+publish the Bluetooth SIG's standard Battery Service (GATT&nbsp;0x180F), and reads
+two public values from them: the battery level and the name or appearance the
+accessory itself advertises. The app does <strong>not</strong> scan for nearby
+devices, does not harvest advertisements, does not pair anything, and runs no
+Bluetooth activity in the background. Accessory names and identifiers stay on your
+device — they are never synced and never transmitted.</p>
+
+<h2>iCloud sync</h2>
+<p>If you turn on Cloud Sync (a Pro feature), the app mirrors your
+<em>preferences</em> — the settings of the cards you opted in, your card order, and
+your theme — through <strong>your own private iCloud key-value storage</strong>, so
+they follow you to your other devices. That is Apple's iCloud, tied to your Apple
+Account; we have no servers and no access to it. Nothing else is synced: not your
+measurement history, not your accessory names, not your data-plan figures. With
+Cloud Sync off, the app does not read from or write to iCloud at all.</p>
 
 <h2>Estimates</h2>
 <p>Battery capacity in mAh is an estimate derived from your device model's published
@@ -44,5 +69,8 @@ details. See Apple's privacy policy for how Apple handles transactions.</p>
 <h2>Changes & contact</h2>
 <p>If this policy ever changes, the update ships with the app and is posted here.
 Questions: <a href="mailto:willisshan66@gmail.com">willisshan66@gmail.com</a>.</p>
+
+<div class="rule"></div>
+<p><a href="index.html">← Usage!</a> · <a href="terms.html">Terms of Use</a></p>
 </body>
 </html>
